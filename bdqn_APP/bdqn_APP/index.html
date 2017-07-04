@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的第一个APP</title>
+    <style>
+        body{
+            background: #a5b1db;
+           color: blue;
+           
+        }
+
+        td {
+            text-align: center;
+            background: #8fffb2;
+            tab-size: 10px;
+            tab-size: 10px;
+        }
+        #jsdata{
+            text-align: right;
+            background: #c1ffab;
+        }
+        
+
+      
+    </style>
+    <script type="text/javascript">
+    
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+<strong>我的第一个APP</strong>
+                         <!--
+                         	作者：2568218315@qq.com
+                         	时间：2017-06-10
+                         	描述：加粗
+                         -->
+<br />
+我的第一个APP
+<h1>北京欢迎你</h1>
+<p>北京欢迎你，有梦想谁都了不起！<br />
+                        <!--
+                        	作者：2568218315@qq.com
+                        	时间：2017-06-10
+                        	描述：换行
+                        -->
+	<hr />
+          <!--
+          	作者：2568218315@qq.com
+          	时间：2017-06-10
+          	描述：水平线
+          -->
+           &copy;2003-2013 北大青鸟<hr />
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2003-2013 北大青鸟<hr />
+               &gt;2003-2013 北大青鸟<hr />
+                &lt;2003-2013 北大青鸟<hr />
+                &quot;2003-2013 北大青鸟<hr  />
+               
+<em>有勇气就会有奇迹</em>  
+
+                    <!--
+                    	作者：2568218315@qq.com
+                    	时间：2017-06-10
+                    	描述：倾斜
+                    -->
+                    
+                    
+                    
+                    
+</p>
+<center>
+    <!--   欢迎<%=request.getAttribute("names") %>来到计算器世界！
+                 -->
+   <!-- 欢迎<%=request.getAttribute("names") %>来到计算器世界！-->
+                                      欢迎admin来到计算器世界！
+    <table border="2" width="300" height="300" id="js" onclick="js();">
+        <tr>
+            <td colspan="5" height="50"   id="jsdata">  </td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>/</td>
+            <td>*</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>-</td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>+</td>
+
+        </tr>
+        <tr>
+
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td rowspan="2">=</td>
+    </tr>
+        <tr>
+            <td id="ff">%</td>
+            <td>0</td>
+            <td>.</td>
+
+        </tr>
+
+    </table>
+    <script type="text/javascript">
+        var result = "";
+        var jsresult = "";
+        var judge = 0;
+        var equal = 0;
+        var first = 0;
+        zeros = 0;
+        function js() {
+            //alert("123");
+            var events = event.srcElement.innerText;
+            //$('#jsdata').innerText;
+            if ("=" == events) {
+                jsresult = eval(result);
+                document.getElementById('jsdata').innerText = jsresult;
+                first = 0;
+                zeros = 0;
+                return;
+            }
+            if ("c" == events) {
+                document.getElementById('jsdata').innerText = "0";
+                result = "";
+                first = 0;
+                return;
+            }
+//            if (events == "1" || events == "2" || events == "3" || events == "4" || events == "5" ||
+//                events == "6" || events == "7" || events == "8" || events == "9" || events =='.') {
+//                first = 1;
+//            }
+//            if (0 == events) {
+//                if (first) {
+//                    result += events;
+//                }
+//            }
+            if ("0" == result) {
+                result = events;
+            }
+            else {
+
+                if (events != "0") {
+                    result += events;
+                    first = 1;
+                    if (events == "+" || events == "-" || events == "*" || events == "/") {
+                        first = 0;
+                    }
+                    zeros = 0;
+                }
+                else {
+                    if (first == 0) {
+                        if (zeros == 0)
+                            result += events;
+                    }
+                    if (first == 1) {
+                        result += events;
+                    }
+                    zeros = 1;
+                }
+            }
+            document.getElementById('jsdata').innerText = result;
+        }
+
+    </script>
+
+</center>
+<!--
+	作者：2568218315@qq.com
+	时间：2017-06-03
+	描述：
+<h2>我的第一个H2</h2>
+<h3>我的第一个H3</h3>
+<h4>我的第一个H4</h4>
+<h5>我的第一个H5</h5>
+<h6>我的第一个H6</h6>
+
+-->
+
+</body>
+</html>

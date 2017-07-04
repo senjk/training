@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单2</title>
+	</head>
+	<body>
+		<!--
+        	作者：2568218315@qq.com
+        	时间：2017-07-04
+        	描述：表单2
+        -->
+		  <form method="get" action="main.html" style="text-align: center;" enctype="multipart/form-data">
+		<div>
+      		<label>请输入数字：</label>
+      		<input type="range" name="range1" min="0" max="10" step="2" />
+      		
+      	</div>
+      	<div>
+      		<input type="submit" value="提交" />
+      	</div>
+      	
+      	<div>
+      	<p>请输入搜索的关键词：<input type="search" name="sousuo"/></p>
+      	<input type="submit" value="提交" />
+      	</div>
+      	
+      	
+      	<div>
+      		隐藏域：<input type="hidden" value="666" name="666" />
+      		<input type="text" value="89" readonly="readonly" />
+      	</div>
+      	
+      	<div>
+      		<input type="search" name="sousuo" placeholder="请输入关键词" />
+      		</div>
+      		<div>
+      		<input type="text" name="code" id="code" placeholder="请输入中文"required="ture" />
+      	</div>
+      	<div>
+      		<input type="submit"value="登录" />
+      	</div>
+      		<div>
+      		<input type="text" name="tel" placeholder="请输入电话号码"required="ture"  pattern="^"/>
+      	</div>
+      	<div>
+      		<input type="submit"value="登录" />
+      	</div>
+      	
+      	
+      	<div>
+      		<input type="text"name="code"readonly="readonly" value="100"  />
+      	</div>
+      	<div>
+      		<input type="submit" disabled="disabled" value="保存" />
+      	</div>
+      	<div>
+      		<input type="email" name="email"placeholder="请输入邮箱"pattern="" />
+      	</div>
+      	
+     </form> 	
+	</body>
+</html>

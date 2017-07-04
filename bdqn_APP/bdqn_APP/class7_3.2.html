@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+	</head>
+	<body>
+		<!--
+      	作者：程森
+      	时间：2017-07-03
+      	描述：表单
+      -->
+
+      <form method="get" action="main.html" style="text-align: center;" enctype="multipart/form-data">
+      	<div>
+      		<label>账户 : </label>
+      		<input type="text" id="code" name="code" value="admin" size="20" maxlength="20" placeholder="请输入账户"/>
+      	</div>
+      	<div>
+      		<label>密码 : </label>
+      		<input type="password" id="pwd" name="pwd" value="123" size="20" maxlength="20"/>
+      	</div>
+      	<div>
+      		<input type="radio" value="男" checked="checked" />男
+      		<input type="radio" value="女" />女
+      	</div>
+      	<div>
+      		<select name="sex" size="0">
+      			<option value="0" selected="selected">男</option>
+      			<option value="1">女</option>
+      		</select>
+      	</div>
+      	<div>
+      		<input type="checkbox" name="interest" value="sports" />运动
+      		<input type="checkbox" name="interest" value="talk" checked="checked" />聊天
+      		<input type="checkbox" name="interest" value="play"/>玩游戏
+      		
+      	</div>
+      	<div>
+      		<input type="image" src="img/photo-2.jpg" />
+      	</div>
+      	<div>
+      		<textarea name="" cols="10"rows="10" >123</textarea>
+      	</div>
+      	<div>
+      		
+      			<input type="file" name="file" />
+      			<input type="submit" name="upload" value="上传" />
+      	
+      	</div>
+      	
+      	
+      	
+    
+      	<div>
+      		<input type="button" value="注册" />
+      		<input type="submit" value="登录" />
+      		<input type="reset" value="重置" />
+      	</div>
+      	
+      </form>
+	</body>
+</html>
