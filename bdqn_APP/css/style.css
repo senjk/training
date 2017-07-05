@@ -1,0 +1,58 @@
+/*
+ * div <p> ul
+ */
+/*p{
+	font-size: 20px;
+    background: red;
+}
+/*li{
+	background: green;
+}
+/*.aa{
+	background: yellow;
+}
+#p1{
+	background: brown;
+}
+.p1{
+	font-family: "新宋体";
+	font-size: 30px;
+	background: pink;
+}*/
+/*#ss{
+	background: forestgreen;
+}*/
+/*#p1+p {
+	background: paleturquoise;
+}
+#ff~p{
+	background: green;
+}*/
+/*#p1~p{
+	background: firebrick;
+}*/
+/*div p:nth-child(2){
+	background: yellow;
+}*/
+/*
+p[id=p2]{
+	background: hotpink;
+}
+p[id^=p]{
+	background: hotpink;
+}
+ul[id$=s]{
+	background: hotpink;
+}
+
+p[id*=s]{
+	background: hotpink;
+}*/
+
+
+/*
+ * div div p span
+ */
+#qq .ee #tt .uu{
+background: red;
+}
