@@ -1,0 +1,49 @@
+body{
+	line-height: 2em;
+	text-align: justify;
+	
+}
+li{
+	
+	/*background-color: rgb(25,85,126);*/
+	
+	/*background: linear-gradient(to right,rgb(10,55,241),rgb(241,36,216));*/
+      list-style-image: url(../img/035.png);
+	
+	/*list-style-type: none;*/
+	/*background: bisque url(../img/ff.jpg)  no-repeat;*/
+	/*background-size: contain;*/
+}
+h2{
+	font-family: "宋体";
+	font-size: 26px;
+	font-style: oblique;
+	text-shadow:rgba(45,58,26,0.5) 2px 4px 5px ;
+}
+a:link{
+	color: rgba(236,166,168,3);
+}
+a:visited{
+	color: goldenrod;
+}
+a:hover{
+	color: rgba(58,12,254,2);
+	text-decoration: underline;
+}
+a:active{
+	color: fuchsia;
+}
+p{
+	text-align: left;
+	text-align-last: center;
+	text-indent: 2em;
+	line-height: 2em;
+	text-decoration: overline;
+	background: radial-gradient(red,green);
+	/*background: linear-gradient(to bottom,red,green);*/
+}
+span{
+	font-style: oblique;
+	font-weight: bold;
+	color: rgb(58,220,155);
+}
