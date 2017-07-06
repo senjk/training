@@ -1,4 +1,7 @@
-body{
+
+/******example7_5.1******/
+
+/*body{
 	line-height: 2em;
 	text-align: justify;
 	
@@ -7,14 +10,14 @@ li{
 	
 	/*background-color: rgb(25,85,126);*/
 	
-	/*background: linear-gradient(to right,rgb(10,55,241),rgb(241,36,216));*/
+	/*background: linear-gradient(to right,rgb(10,55,241),rgb(241,36,216));
       list-style-image: url(../img/035.png);
 	
 	/*list-style-type: none;*/
 	/*background: bisque url(../img/ff.jpg)  no-repeat;*/
-	/*background-size: contain;*/
-}
-h2{
+	/*background-size: contain;
+}*/
+/*h2{
 	font-family: "宋体";
 	font-size: 26px;
 	font-style: oblique;
@@ -40,10 +43,49 @@ p{
 	line-height: 2em;
 	text-decoration: overline;
 	background: radial-gradient(red,green);
-	/*background: linear-gradient(to bottom,red,green);*/
+	/*background: linear-gradient(to bottom,red,green);
 }
 span{
 	font-style: oblique;
 	font-weight: bold;
 	color: rgb(58,220,155);
+}*/
+
+
+/*******example7_5.2***********/
+body{
+	background-color: rgb(123,146,235);
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 2em;
+	text-decoration: none;
+	 background-attachment:fixed;
+	 text-align: justify;
+	 
+	 
+	
+}
+
+h2{
+	line-height: 2em;
+	text-shadow: rgb(221,154,190) 6px 5px 5px;
+	font-family: "隶书";
+	font-size: 30px;
+	 background-attachment:fixed;
+	
+}
+
+li{
+	list-style-image: url(../img/035.png);
+	
+	background: radial-gradient(rgb(21,25,41),rgb(158,241,126));
+}
+p{
+	text-indent: 2em;
+
+	  background-attachment:fixed;
+}
+
+#xttz{
+	
 }

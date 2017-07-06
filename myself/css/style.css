@@ -1,0 +1,15 @@
+body{
+	
+	text-align: center;
+	font-size: 50px;
+	background:  url(../img/back.jpg)  no-repeat;
+    background-size:cover ;
+    background-attachment:fixed;
+}
+header{
+	
+	 
+	 background-size:cover;
+	background-attachment:fixed;
+   
+}
