@@ -1,23 +1,26 @@
 body{
-	
-	margin: 0 ;
+	margin: 0 auto;
     padding: 0;
-	text-align: center;
+	border: 1px red solid;
 	background:  url(../img/back.jpg)  no-repeat;
     background-size:cover ;
- 
+    background-attachment:fixed;
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+
 }
 div{
-	
-}
-div:hover{
-	
-
-	
+	float: left;
+    display: inline;
 }
 img{
 	width: 100%;
-	height: 150px;
-	float: left;
-	display: inline;
+	height: 250px;
+}
+header{
+	border: 1px ;
+	
+
+	
 }
