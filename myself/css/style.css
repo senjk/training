@@ -1,26 +1,265 @@
 body{
 	margin: 0 auto;
     padding: 0;
-	border: 1px red solid;
+	border: 1px;
 	background:  url(../img/back.jpg)  no-repeat;
     background-size:cover ;
     background-attachment:fixed;
-    width: 1000px;
-    height: 100%;
-    text-align: center;
+  
+   
+}
 
+
+
+/**myself       */
+.img{
+	width: 1200px;
+	height: 200px;
+	 position: absolute;
+	top: 0px;
+	left: 78px;
 }
-div{
-	float: left;
-    display: inline;
+.head{
+	/*float: left;
+	display: inline;*/
+	margin: 0 auto;
+    padding: 0;
+  
+   
 }
-img{
-	width: 100%;
-	height: 250px;
+#head-wen{
+	border: 1px;
+	margin: 0px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+	font-family:"隶书";
+	width: 76px;
+	height: 200px;
+	 position: absolute;
+	 top: 0px;
+	left: 0px;
 }
-header{
+#head-wene{
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+	font-family:"隶书";
+	width: 76px;
+	height: 200px;
+	 position: absolute;
+	top: 0px;
+	right: 0px;
+	left:1280px ;
+}
+.section{
+	/*float: left;
+	display: inline;*/
+	margin: 0 auto;
+    padding: 0;
+}
+#f-img{
+	width: 250px;
+	height: 330px;
+	border: 10px blue solid ;
+	margin: 0px;
+	padding: 0px 0px;
+	 position: fixed;
+	top: 200px;
+	left:10px ;
+	border-radius:130px 130px 130px 130px ;
+	border-image: url(../html/images/contact.jpg)30 30 round;
+}
+#imgh{
+	
 	border: 1px ;
-	
+	margin: 0px;
+	padding: 0px 0px;
+	 position: fixed;
+	top: 190px;
+	left:465px ;
+	width: 800px;
+	height: 360px;
+}		
+#imgh ul{
+	list-style-type:none;
+}
+#imgh li{
+	display:none;
+}
+.footer{
+	border: 1px  ;
+	margin: 0px;
+	padding: 0px 0px;
+	 position: fixed;
+	 bottom: 0px;
+	left:0px ;
+	width: 100%;
+	height: 80px;
+	font-size: 20px;
+	font-family:"幼圆";
+}
 
+a,footer a:link{
+	text-decoration: none;
+	color: black;
+}
+#jian-j{
+		border: 1px ;
+	margin: 0px;
+	padding: 0px 0px;
+	 position: fixed;
+	 top: 200px;
+	 left: 295px;
+	 width: 200px;
+	 height: 350px;
+	 line-height: 50px;
+	 font-family: "楷体";
+	 font-size: 17px;
+}
+.mu{
+	border: 1px  ;
+	margin: 0px;
+	padding: 0px 0px;
+	 position: fixed;
+	 top: 200px;
+	 right: 20px;
+	 width: 150px;
+	 height: 350px;
+}
+#mu li,#mu li a:link{
+	list-style-image: url(../img/vip.gif);
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-family:"幼圆";
+	line-height: 50px;
 	
+	
+}
+#span1{
+	position: absolute;
+	top: 10px;
+	left: 30%;
+}
+#span2{
+	position: absolute;
+	top: 10px;
+	left: 46%;
+}
+#span3{
+	position: absolute;
+	top: 10px;
+	left: 70%;
+}
+#span4{
+	position: absolute;
+	top: 45px;
+	left: 43%;
+}
+#kong{
+	width: 100%;
+	height: 203px;
+}
+
+/** xingxi  */
+#section-tow{
+	position: absolute;
+	top: 201px;
+	left:300px ;
+}
+#img-two{
+	border-radius:100px 100px 100px 100px ;
+}
+
+.footer-two{
+	margin: 0px auto;
+	padding: 0px 0px;
+	border: 1px ;
+	position: absolute;
+	top: 900px;
+	left:0px ;
+	width: 100%;
+	height: 90px;
+	font-size: 20px;
+	font-family:"幼圆";
+}
+/*jianjie   */
+.footer-there{
+	margin: 0px auto;
+	padding: 0px 0px;
+	border: 1px ;
+	position: absolute;
+	top: 650px;
+	left:0px ;
+	width: 100%;
+	height: 90px;
+	font-size: 20px;
+	font-family:"幼圆";
+}
+/*  college*/
+.muk{
+	border: 1px ;
+	margin: 0px;
+	padding: 0px 0px;
+	 position: fixed;
+	 top: 200px;
+	 left: 10px;
+	 width: 150px;
+	 height: 350px;
+}
+#muk li,#muk li a:link{
+	list-style-image: url(../img/vip.gif);
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-family:"幼圆";
+	line-height: 70px;
+	
+}
+#section-there{
+	position: absolute;
+	top: 201px;
+	left:0px ;
+}
+#section-th{
+	position: absolute;
+	top: 201px;
+	left:160px ;
+	width: 1000px;
+	line-height: 28px;
+	font-size: 24px;
+	font-family:"幼圆";
+}
+.footer-here{
+	margin: 0px auto;
+	padding: 0px 0px;
+	border: 1px ;
+	position: absolute;
+	top: 2750px;
+	left:0px ;
+	width: 100%;
+	height: 90px;
+	font-size: 20px;
+	font-family:"幼圆";
+}
+
+/**photo*/
+.footer-ere{
+	margin: 0px auto;
+	padding: 0px 0px;
+	border: 1px;
+	position: absolute;
+	top: 1250px;
+	left:0px ;
+	width: 100%;
+	height: 90px;
+	font-size: 20px;
+	font-family:"幼圆";
+}
+img:hover{
+
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 5px 5px rgba(12,0,0,0.1),0 10px 10px 0 rgba(0,0,0,0.5);
+			
 }

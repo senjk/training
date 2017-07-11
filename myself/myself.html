@@ -2,17 +2,129 @@
 <html>
 	<head lang="en">
 		<meta charset="utf-8" />
-		<title></title>
+		<title>首页</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	
+	
 	</head>
 	<body>
+		<embed src="music/新垣結衣.mp3" autostart="true" loop="true" width="0"height="0"starttime="01:30" hidden="ture"></embed>
 		<header >
-			<div>
-			<img src="img/朝阳.jpg" />
+		<div class="head" id="head-wen">
+			激<br />
+			扬
+		</div>
+			<div class="head">
+			<img class="img" src="img/01.jpg" />
 			</div>
 			
-				sfsd
-			
+				<div class="head"id="head-wene">
+					青
+					<br />
+					春
+				</div>
 		</header>
+		<section>
+			<div class="section">
+				<img id="f-img" src="img/1.jpg" />
+			</div>
+			<div id="jian-j">
+				姓名:程森<br />
+				学校:安徽科技学院<br />
+				兴趣爱好:爱旅游,爱运动,<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;爱小说,爱动漫<br />
+				交友宣言:一直觉得朋友是一种特殊的财富,见证了自己的青春。
+				
+			</div>
+			<div id="imgh">
+			<ul id="img">
+	<li><img id="photo" src="img/11.jpg" width="640px" height="340"/></li>
+	<li><img id="photo" src="img/12.jpg" width="640px"height="340"/></li>
+	<li><img id="photo" src="img/13.jpg"width="640px" height="340"/></li>
+	<li><img id="photo" src="img/14.jpg" width="640px" height="340"/></li>
+	<li><img id="photo" src="img/15.jpg" width="640px"height="340"/></li>
+	<li><img id="photo" src="img/16.jpg"width="640px" height="340"/></li>
+	<li><img id="photo" src="img/17.jpg" width="640px" height="340"/></li>
+	<li><img id="photo" src="img/18.jpg" width="640px"height="340"/></li>
+	<li><img id="photo" src="img/19.jpg"width="640px" height="340"/></li>
+	<li><img id="photo" src="img/20.png" width="640px" height="340"/></li>
+	
+</ul>
+			</div>
+			<div class="mu">
+		<ul id="mu">
+	<li>
+		<a href="myself.html"><strong>个人首页</strong></a>
+	</li>
+	<li>
+		<a href="jianjie.html"><strong>个人简介</strong></a>
+	</li>
+	<li>
+		<a href="college.html"><strong>大学生活</strong></a>
+	</li>
+	<li>
+		<a href="xingxi.html"><strong>个人信息</strong></a>
+	</li>
+	<li>
+		<a href="photo.html"><strong>图片集锦</strong></a>
+	</li>
+	<li>
+		<a href="chrome-extension://laookkfknpbbblfpciffpaejjkokdgca/dashboard.html"><strong>退出</strong></a>
+	</li>
+</ul>
+			</div>
+		</section>
+		
+		
+		
+		<footer class="footer">
+			<div>
+			<span id="span1">
+				<a href="https://www.baidu.com/"><strong>百度</strong></a>
+			</span>
+			<span id="span2">
+				<a href="http://www.bilibili.com/"><strong>bilibili</strong></a>
+			</span>
+			<span id="span3" >
+				<a href="http://www.acfun.cn/"><strong>acfun</strong></a>
+			</span>
+		</div>
+		<div align="center">
+			
+			<span id="span4">
+				&copy;北大青鸟-2017
+			</span>
+		</div>
+		</footer>
+		
+		<script type="text/javascript">
+;(function(){
+	var i=0;
+	var $=function(ID){return document.getElementById(ID);};
+	var timer=null,speed=5000;
+	$("img").getElementsByTagName("li")[0].style.display="block";
+	;(function(){
+ 		if(i>=$("img").getElementsByTagName("li").length){
+  			for(var j=0;j<$("img").getElementsByTagName("li").length;j++){
+  				$("img").getElementsByTagName("li")[j].style.display="none";
+  			}
+  			i=1;
+  			$("img").getElementsByTagName("li")[0].style.display="block";
+  		} else {
+  			for(var j=0;j<$("img").getElementsByTagName("li").length;j++){
+  				//console.log(j+""+i);
+  				if(j===i){
+  					$("img").getElementsByTagName("li")[j].style.display="block";
+  				} else {
+  					$("img").getElementsByTagName("li")[j].style.display="none";
+  				}
+  			}
+  			i++;
+  		}
+  		timer=setTimeout(arguments.callee,speed);
+	})();
+})();
+</script>
 	</body>
 </html>
