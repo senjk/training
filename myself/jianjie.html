@@ -5,6 +5,8 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>个人首页</title>
    <link rel="stylesheet" href="css/style.css" type="text/css" />
+     <link rel="stylesheet" type="text/css" href="css/mybody.css" media="all" />
+        <script language="javascript" type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
 </head>
 <body >
 	<embed src="music/新垣結衣.mp3" autostart="true" loop="true" width="0"height="0"starttime="01:30" hidden="ture"></embed>
@@ -111,6 +113,18 @@
 		</div>
 		</footer>
   
-	
+	<div id="scrollTop">
+            <div class="level-2"></div>
+            <div class="level-3"></div>
+        </div>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript">
+        UI.global_search();
+        var uvOptions = {};
+        // !important
+        (function() {
+            initScrollTop();
+        })();
+    </script>
 </body>
 </html>
