@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>练习</title>
+		<style>
+			#cs{
+				width: 200px;
+				height: 50px;
+				background: palegreen;
+				margin: 10px auto;
+				display: block;
+			}
+			#css{
+				width: 200px;
+				height: 50px;
+				background: palevioletred;
+				margin: 10px auto;
+			}
+			#time{
+				height: 60px;
+				/*background: red;*/
+				font-size: 30px;
+			}
+			#yanse{
+				width: 300px;
+				height: 60px;
+				/*background: red;*/
+				font-size: 30px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<h2> window.open</h2>
+		<input type="button" value="打开网页" onclick="open_add()" />
+		<h2> window.close</h2>
+		<input type="button" value="关闭网页" onclick="close_ins()" />
+		<h2> location.href</h2>
+		<input type="button" value="跳转网页" onclick="hreff()" />
+		<h2> location.reload</h2>
+		<input type="button" value="刷新网页" onclick="reloadd()" />
+		<h2> history.back</h2>
+		<input type="button" value="返回上一级" onclick="backk()" />
+		<h2> history.forward</h2>
+		<input type="button" value="前往下一级" onclick="forwardd()" />
+		
+			<textarea id="cs"  cols="10"rows="10"></textarea>
+		
+			<div id="css"></div>
+		<input type="button" value="更新" onclick="genx()" />
+		
+		<div id="time">
+			
+		</div>
+		<input type="button" value="时钟开始" onclick="timed()" />
+		<input type="button" value="关闭时钟" onclick="timep()" />
+		<div id="yanse">
+			
+		</div>
+		<input type="button" value="更换颜色" onclick="clor()" />
+		
+		<script type="text/javascript" src="js/bom.js" ></script>
+	</body>
+</html>

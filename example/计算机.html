@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		  body{
+            background: #a5b1db;
+           color: blue;
+           margin: 0px auto;
+           
+        }
+        td {
+            text-align: center;
+            background: #8fffb2;
+            tab-size: 10px;
+            tab-size: 10px;
+        }
+        #jsdata{
+            text-align: right;
+            background: #c1ffab;
+        }
+        
+</style>
+ <script type="text/javascript">
+    
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+      
+   
+	</head>
+	<body>
+		<center>
+		                        欢迎admin来到计算器世界！
+    <table border="2" width="300" height="300" id="js" onclick="js();">
+        <tr>
+            <td colspan="5" height="50"   id="jsdata">  </td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>/</td>
+            <td>*</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>-</td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>+</td>
+
+        </tr>
+        <tr>
+
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td rowspan="2">=</td>
+    </tr>
+        <tr>
+            <td id="ff">%</td>
+            <td>0</td>
+            <td>.</td>
+
+        </tr>
+
+    </table>
+    </center>
+  <script type="text/javascript" src="js/jsj.js" ></script>
+	</body>
+</html>

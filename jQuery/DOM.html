@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<style>
+			section{
+				margin: 30px;
+				width: 230px;
+				border-color: darkgray;
+				border:1px solid;
+				background-color: #A5B1DB;
+				border-radius: 2px 2px 3px 5px;
+			}
+			
+			ul{
+				
+			}
+			li{
+				line-height: 26px;
+				
+				padding-left:0px;
+				padding-right: 26px;
+				list-style-type: none;
+			}
+		</style>-->
+	</head>
+	<body>
+		<!--<section id="news">
+			<header> 京东快报
+			<a href="#">更多></a>
+			</header>
+			<ul>
+				<li>
+					<a href="#">志玲姐姐：墨镜300减30</a>
+				</li>
+				<li>
+					<a href="#">京东无锡馆正式启动</a>
+				</li>
+				<li>
+					<a href="#">99元抢平板！平拍品牌配件199-100</a>
+				</li>
+				<li>
+					<a href="#">99元抢平板！平拍品牌配件</a>
+				</li>
+			</ul>
+		</section>
+		<script>
+			var  obj=document.getElementById("news");
+//			var  str=obj.lastElementChild.firstElementChild.nextElementSibling.nextElementSibling.innerHTML;
+var  str=obj.lastElementChild.lastElementChild.previousElementSibling.previousElementSibling.innerHTML;
+var  str=obj.lastElementChild.firstElementChild.innerHTML||obj.lastChild.firstChild.innerHTML
+
+			alert(str)
+		</script>-->
+		
+		<div>
+		<input type="radio" name="book" id="man"  onclick="hh()"/>
+		<label for="man">狗狗</label>
+		<input type="radio" name="book" id="woman" onclick="hh()"/>
+		<label for="woman">灰霾</label>
+		</div>
+		<img src=""alt="" id="imadge"  onclick="grt()" />
+		<script>
+			var gg=document.getElementsByName("book");
+			var imgh=document.getElementById("imadge");
+			function hh(){
+				
+			if(gg[0].checked){
+		
+					imgh.setAttribute("src","img/003.png");
+					imgh.setAttribute("alt","狗狗");
+					
+					
+
+			}
+			else{
+				if(gg[1].checked){
+					imgh.setAttribute("src","img/001.png");
+					imgh.setAttribute("alt","灰霾");
+				}}
+			}
+		
+			function grt(){
+				var df=imgh.getAttribute("src")
+				alert(df);
+			}
+		</script>
+	</body>
+</html>
