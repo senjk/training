@@ -1,0 +1,39 @@
+$(document).ready(function(){
+	$("#jj").hover(
+		function(){
+		$("#jj").css("color","red")
+	},
+	function(){
+		$("#jj").css("color","black")
+	}
+)
+	$(".top-right>li").hover(
+		function(){
+		$(this).css("color","red")
+	},
+	function(){
+		$(this).css("color","black")
+	}
+	)
+	
+	$("dl").click(
+		function(){
+			var dd=$(this).find("dd");
+			if(dd.is(':visible')){
+				dd.slideUp("fast");
+			}
+			else{
+				dd.slideDown("slow");
+			}
+		})
+	$(".jk").click(
+		function(){
+			var dd=$(this).find("ul");
+			if(dd.is(':visible')){
+				dd.slideUp("fast");
+			}
+			else{
+				dd.slideDown("slow");
+			}
+		})	
+})

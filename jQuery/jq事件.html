@@ -1,0 +1,333 @@
+<!--
+	作者：2568218315@qq.com
+	时间：2017-07-26
+	描述：鼠标事件
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件</title>
+		<style>
+			ul,li{
+				list-style: none;
+				background-color: #FF2832;
+				display: inline-block;
+				margin: 0 auto;
+				padding: 0 12px;
+			}
+			a{
+				text-decoration: none;
+				font-size: 30px;
+			}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	<script type="text/javascript" src="js/shijian.js" ></script>
+	
+	</head>
+	<body>
+		<div class="wrap">
+		<ul class="nav-ul">
+			<li><a href="">图书</a></li>
+			<li><a href="">电子书</a></li>
+			<li><a href="">服装</a></li>
+			<li><a href="">户外运动</a></li>
+		</ul>
+		</div>
+	</body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件</title>
+		
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	<script>
+		var x=0
+		$(document).ready(function(){
+			$(".over").mouseover(function(){
+				x=x+1;
+				$(".over span").text(x);
+			});
+			$(".enter").mouseenter(function(){
+				x=x+1;
+				$(".enter span").text(x);
+			})
+		})
+	</script>
+	</head>
+	<body>
+		<div class="over" style="width: 200px; height: 200px;background-color: yellow;">
+			mouseover事件
+			<span></span>
+		</div>
+		<div class="enter" style="width: 200px; height: 200px;background-color: red;">
+			mouseenter事件
+			<span></span>
+		</div>
+		
+	</body>
+</html>-->
+
+
+<!--
+	作者：2568218315@qq.com
+	时间：2017-07-26
+	描述：键盘事件
+-->
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	<script>
+		$(document).ready(function(){
+			//键盘按下
+			$("#userName").keydown(
+				function(){
+					$("#events").append("keydown");
+				}
+			).keyup(
+				function(){
+					$("#events").append("keyup");
+				}
+			).keypress(
+				function(){
+				$("#events").append("keypress");
+			});
+			//键盘弹起
+//			$("#userName").keyup(
+//				function(){
+//					$("#events").html("keyup");
+//				}
+//			);
+			//键盘按下并弹起
+			$("#paaaword").keypress(
+				function(event){
+					if(event.keyCode=="13"){
+						var flag=confirm("你确定要提交吗？")
+					    if(flag==true)
+					    alert("提交成功")
+					}
+				$("#events").html("keypress");
+			}); 
+		})
+		
+		
+	</script>
+	</head>
+	<body>
+		<fieldset>
+			<legend> 会员登录</legend>
+			<dl>
+			<dt>用户名</dt>
+			<dd>
+				<input type="text" id="userName" />
+			</dd>
+			</dl>
+			<dl>
+				<dt>密码</dt>
+				<dd>
+					<input type="password" id="paaaword" />
+				</dd>
+			</dl>
+			<dl>
+				<dt></dt>
+				<dd>
+					<input type="submit" value="登录" />
+				</dd>
+			</dl>
+			<span id="events"></span>
+		</fieldset>
+	</body>
+</html>-->
+
+	
+<!--
+	作者：2568218315@qq.com
+	时间：2017-07-26
+	描述：浏览器事件
+-->
+
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>事件</title>
+		
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	<script>
+		var x=0;
+		$(document).ready(function(){
+			$(window).resize(function(){
+				x=x+1;
+				$("span").text(x);
+			}
+			);
+		})
+	</script>
+	</head>
+	<body>
+		
+		<span></span>
+	</body>
+</html>-->
+
+
+
+
+<!--
+	作者：2568218315@qq.com
+	时间：2017-07-27
+	描述：绑定单个事件
+-->
+
+
+<!--<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绑定单个事件</title>
+<link href="css/index01.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+	
+	//绑定单个事件
+//	$(document).ready(function(){
+//		$(".li01").bind("click",function(){
+//			$(".tabbot01").show().css("background-color","blue").siblings("ul").hide();
+//		});
+//		$(".li02").bind("click",function(){
+//			$(".tabbot02").show().css("background-color","orangered").siblings("ul").hide();
+//		
+//		});
+//		
+//		//解除绑定
+//		$(".jcbd").bind("click",function(){
+//			$(".li01").unbind("click")
+//		})
+//		
+//	})
+//
+
+//绑定多个事件
+$(document).ready(function(){
+$("#tabtop ul li").bind({
+	"mouseover":function(){
+		$(this).css("color","red");
+		var index=$(this).index();
+		$("#tabbot ul").eq(index).show().siblings("ul").hide();
+	},
+	"mouseout":function(){
+		$(this).css("color","white");
+	}
+});
+
+$(".jcbd").bind("click",function(){
+			$("#tabtop ul li").unbind("mouseout");
+	});
+
+});
+</script>
+</head>
+
+<body>
+<!--div+ul布局-->
+ <!--<div id="tabtop">
+    <ul>
+    	<li class="li01">日常任务</li>
+        <li class="li02">成长任务</li>
+    
+    </ul>
+ 
+ </div>
+ 
+ <div id="tabbot">
+  <!--日常任务-->
+     <!--<ul class="tabbot01">
+       <li><img src="img/p1.jpg"/></li>
+       <li><img src="img/p2.jpg"/></li>
+       <li class="jcbd">解除绑定</li>
+     
+     </ul>-->
+     <!--成长任务-->
+      
+     <!--<ul class="tabbot02 yc">
+      <li><img src="img/p3.jpg"/></li>
+       <li><img src="img/p4.jpg"/></li>
+       <li><img src="img/p5.jpg"/></li>
+     
+     </ul>
+ 
+ 
+ 
+ </div>
+
+
+
+</body>
+</html>-->
+
+<!--
+	作者：2568218315@qq.com
+	时间：2017-07-27
+	描述：tab切换
+-->
+<!--<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tab切换</title>
+</head>
+<style>
+  *{margin:0px auto; padding:0px;}
+  #tablist{ height:360px;  width:560px;
+            overflow:hidden; color:white; 
+			font-weight:bolder;}
+#tablist>ul{list-style:none;}
+.ys{width:130px; float:left; 
+    line-height:40px; text-align:center;
+border-top-left-radius:3%;
+border-top-right-radius:3%;  
+margin-left:2px;
+}
+.ys1{background-color:#FF9400;}
+.ys2{background-color:#25A7E5;}
+.ulys{margin-left:10px;}
+</style>
+<body>
+<section id="tablist">
+  <ul class="ulys" >
+     <li class="ys ys1">日常任务</li>
+     <li class="ys ys2">成长任务</li>
+   </ul>
+
+ <ul class="imgul">
+     <li><img src="img/p01.jpg"/></li>
+    <li><img src="img/p02.jpg"/></li>
+   </ul>
+
+</section>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+  $(document).ready(function(e) {
+	  
+	         $(".ulys li").mouseover(
+	   function()
+	   {
+		  var index= $(this).index();
+		 	 
+		  $(".imgul li").siblings("li").hide();
+		   $(".imgul li").eq(index).show();
+	   }  
+	  
+	  );
+});
+</script>
+</body>
+</html>-->

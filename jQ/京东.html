@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+			.top-left{
+				display: inline-block;
+				float: left;
+			}
+			.top-right{
+				
+				float: right;
+			}
+			.top{
+				height: 21px;
+				/*border: 1px red solid;*/
+				background-color:#f9f9f9;
+				font-size: 12px;
+				line-height: 21px;
+			}
+			#top{
+				width:800px ;
+				margin: 0 auto;
+			}
+			a{
+				text-decoration:none;
+			   /*color:red;*/
+			}
+.gou{
+	/*border: 1px red solid;*/
+	width: 20px;
+	height: 16px;
+	background: url(img/home_sprite.png) no-repeat -40px -86px;
+}   
+.ke{
+	/*border: 1px red solid;*/
+	width: 65px;
+	background: url(img/home_sprite.png) no-repeat -20px -306px;
+/*position: relative;*/
+border: 1px black solid;
+
+}  
+
+.jk>ul{
+	/*position: absolute;
+	top: 10;*/
+	/*border: 1px black solid;
+	border-top: 0px;*/
+	width: 65px;
+	float: left;
+	display: none;
+	background-color:#f9f9f9 ;
+} 
+.ke>ul>li>a{
+	color: black;
+}
+                .guan{
+	/*border: 1px red solid;*/
+	width: 11px;
+	height: 16px;
+	background: url(img/home_sprite.png) no-repeat -40px -70px;
+}
+			.line{
+				border: 1px gray solid;
+				widows: 1px;
+				height: 12px;
+			}
+			 .top-right>li{
+				display: inline-block;
+				cursor: pointer;
+			}
+			dd{
+				display: none;
+			}
+			a{
+				color: gray;
+			}
+			.zhu{
+				width:800px ;
+				margin: 0 auto;
+			}
+		nav {
+				display: inline-block;
+				margin: 0px 10px;
+				
+				width: 200px;
+				border: 1px gray solid ;
+		
+			}
+			nav header{
+				height: 45px;
+				font-size: 28px;
+				background: darkseagreen;
+			}
+			nav ul>li{
+				background: darkgray;
+				margin-top: 1px;
+				font-size: 18px;
+			
+			line-height: 35px;
+				cursor: pointer;
+			}
+			.content{
+				display: inline-block;
+			    margin: 0px 10px;
+				
+				width: 500px;
+				border: 1px gray solid ;
+				}
+				.content ul{
+					margin: 0px 20px;
+					height: 180px;
+					padding: 0px;
+					color: gray;
+				}
+				.content ul>li{
+					margin: 5px 0px;
+					cursor: pointer;
+					padding: 0px;
+					height: 30px;
+					color: gray;
+				}
+				.content p{
+					height: 40px;
+					font-size: 18px;
+					line-height: 40px;
+				color: gray;
+				}
+				.top-left a:first-of-type{
+					color: red;
+				}
+				.top-left a:nth-of-type(2){
+					color: black;
+				}
+				.box{
+					position: relative;
+				}
+				.content{
+					position: absolute;
+					top: 60px;
+				}
+		</style>
+
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	    <script type="text/javascript" src="js/jingdong.js" ></script>
+	</head>
+	<body>
+		<div class="box">
+			
+		<div class="top">
+			<div id="top">
+		<div class="top-left">
+			欢迎光临京东，请
+			<a href="">登录</a>
+			<a id="jj" href="">免费注册</a>
+		</div>
+		<ul class="top-right">
+			<li class="gou"></li>
+			<li> 购物车</li>
+			<li class="line"></li>
+			<li> 我的交易单</li>
+			<li class="line"></li>
+			<li> 会员中心</li>
+			<li class="line"></li>
+			<li class="guan"></li>
+			<li> 我的关注</li>
+			<li class="line"></li>
+			<li class="ke jk"> 联系客服
+			<ul class="topDown">
+						<li><a href="">帮助中心</a></li>
+						<li><a href="">我要吐槽</a></li>
+						<li><a href="">在线客服</a></li>
+						<li><a href="">咨询JIMI</a></li>
+						<li><a href="">客服邮箱</a></li>
+					</ul></li>
+			<li class="line"></li>
+			<li class="ke"> 手机金融</li>
+			<li class="line"></li>
+			<li class="ke"> 网站导航</li>
+			<li class="line"></li>
+		</ul>
+		</div>
+		</div>
+		<div class="zhu">
+			<img src="img/logo.png" />
+		
+	
+		<nav>
+			<header>常见问题分类</header>
+			<ul>
+				<li><dl>
+					<dt>京东金融</dt>
+					<dd><a href="#">京东金融简介</a></dd>
+					<dd><a href="#">京东金融会员</a></dd>
+					<dd><a href="#">京东金融安全中心</a></dd>
+				</dl></li>
+				<li><dl>
+					<dt>理财</dt>
+					<dd><a href="#">京东小金库</a></dd>
+					<dd><a href="#">京东基金理财</a></dd>
+					<dd><a href="#">京东保险理财</a></dd>
+					<dd><a href="#">小白理财</a></dd>
+					<dd><a href="#">智投理财</a></dd>
+					<dd><a href="#">乐猜</a></dd>
+				</dl></li>
+				<li><dl>
+					<dt>白条</dt>
+					<dd><a href="#">京东白条</a></dd>
+					<dd><a href="#">京东金条</a></dd>
+					<dd><a href="#">校园白条</a></dd>
+					<dd><a href="#">教育白条</a></dd>
+					<dd><a href="#">乡村白条</a></dd>
+					<dd><a href="#">京东金采</a></dd>
+					<dd><a href="#">京农贷</a></dd>
+				</dl></li>
+				<li><dl>
+					<dt>众筹</dt>
+					<dd><a href="#">产品众筹</a></dd>
+					<dd><a href="#">轻众筹</a></dd>
+					<dd><a href="#">产品众筹发起者常见问题</a></dd>
+					<dd><a href="#">产品众筹支持者常见问题</a></dd>
+					<dd><a href="#">产品众筹永久众筹常见问题</a></dd>
+					<dd><a href="#">京东众创常见问题</a></dd>
+				</dl></li>
+				<li><dl>
+					<dt>京东钱包</dt>
+					<dd><a href="#">京东钱包简介</a></dd>
+					<dd><a href="#">自动服务及常见问题</a></dd>
+					<dd><a href="#">购房盈</a></dd>
+				</dl></li>
+			</ul>
+		</nav>
+		<section class="content">
+			<p>京东金融 > 京东金融会员</p>
+			<ul>
+				<li>&#8226;<a href="#">什么是京东金融会员</a> </li>
+				<li>&#8226;<a href="#">会员签到规则</a> </li>
+				<li>&#8226;<a href="#">会员金币</a> </li>
+				<li>&#8226;<a href="#">小白信用</a> </li>
+				<li>&#8226;<a href="#">外部虚拟券</a> </li>
+			</ul>
+		</section>
+	</div>
+
+	</div>
+	</body>
+</html>

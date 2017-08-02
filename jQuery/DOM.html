@@ -3,6 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<style>
+			#main{
+				text-align: center;
+				width: 1014px;
+				margin: 0 auto;
+
+			}
+			#adver{
+				position: absolute;
+				left: 10px;
+				top: 30px;
+				z-index: 2;
+			}
+		</style>
 		<!--<style>
 			section{
 				margin: 30px;
@@ -24,8 +38,50 @@
 				list-style-type: none;
 			}
 		</style>-->
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
 	</head>
 	<body>
+		<div id="adver"><img src="img/001.png" /></div>
+		<div id="main"><img src="img/002.png"/> <img src="img/003.png" /><img src="img/004l.png" /></div>
+		<script>
+//			var adverTop;
+//			var adverLeft;
+//			var adverObj;
+//			function inix(){
+//				adverObj=document.getElementById("adver");
+//				if (adverObj.currentStyle){
+//					adverTop=parseInt(adverObj.currentStyle.top);
+//					adverLeft=parseInt(adverObj.currentStyle.left);
+//					
+//				}
+//				else {
+//					adverTop=parseInt(document.defaultView.getComputedStyle(adverObj,null ).top);
+//					adverLeft=parseInt(document.defaultView.getComputedStyle(adverObj,null ).left);
+//					
+//					
+//				}
+//			}
+//			function move(){
+//				var sTop=parseInt(document.documentElement.scrollTop);
+//				var sLeft=parseInt(document.documentElement.scrollLeft);
+//			    adverObj.style.top=adverTop+sTop+"px";
+//			    adverObj.style.left=adverLeft+sLeft+"px";
+//			    
+//			}
+//			window.onload=inix;
+//			window.onscroll=move;
+
+$(document).ready(function(){
+	var adverTop=parseInt($("#adver").css("top"));
+	var adverLeft=parseInt($("#adver").css("left"));
+	$(window).scroll(function(){
+		var scrollTop = parseInt($(this).scrollTop());
+		var scrollLeft = parseInt($(this).scrollLeft());
+		$("#adver").offset({top:scrollTop+adverTop});
+		$("#adver").offset({left:scrollLeft+adverLeft});
+	})
+})
+		</script>
 		<!--<section id="news">
 			<header> 京东快报
 			<a href="#">更多></a>
@@ -54,7 +110,7 @@ var  str=obj.lastElementChild.firstElementChild.innerHTML||obj.lastChild.firstCh
 			alert(str)
 		</script>-->
 		
-		<div>
+		<!--<div>
 		<input type="radio" name="book" id="man"  onclick="hh()"/>
 		<label for="man">狗狗</label>
 		<input type="radio" name="book" id="woman" onclick="hh()"/>
@@ -85,6 +141,6 @@ var  str=obj.lastElementChild.firstElementChild.innerHTML||obj.lastChild.firstCh
 				var df=imgh.getAttribute("src")
 				alert(df);
 			}
-		</script>
+		</script>-->
 	</body>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://apps.bdimg.com/libs/jquery/1.4.4/jquery.js">
+</script>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	<style>
+		h2{
+			cursor:pointer;/* 小手*/
+			
+		}
+		p{
+			display: none;
+		}
+	</style>
+	</head>
+	<body>
+		<!--<h2>谁是受益人</h2>
+		<p>
+			<strong>解答：</strong>
+			受益人
+		</p>
+		<script>
+			$(document).ready(function(){
+				$("h2").click(function(){
+					$("h2").css("background-color","#98FB98").next().css("display","block");
+				})
+			})
+			$(document).ready(function(){
+				$("h2").click(function(){
+					$("h2").click(function(){
+					refresh();
+				})
+				})
+			})
+//			$(function(){
+//  $("#按钮id").click(function(){
+//      refresh();
+//  });
+//});
+
+function refresh(){
+    window.location.reload();//刷新当前页面.
+     
+    //或者下方刷新方法
+    //parent.location.reload()刷新父亲对象（用于框架）--需在iframe框架内使用
+    // opener.location.reload()刷新父窗口对象（用于单开窗口
+  //top.location.reload()刷新最顶端对象（用于多开窗口）
+}
+			$(document).ready(function(){
+				$("h2").click(function(){
+					$("h2").click(function(){
+						$("h2").click(function(){
+					$("h2").unbind("click");
+				})
+					})
+				})
+			})
+		</script>-->
+		<div id="cs">
+jQuery
+		</div>
+		<div id="dc">
+			11
+		</div>
+		<input type="text" width="20px" value="input" id="in" />
+		
+		<script>
+			$(document).ready(function(){
+				$("#cs").css({"color":"aqua","font-size":"40px"})
+				
+//				$("#dc").innerHTML=$("#cs").innerHTML;
+//			$("#dc").show()
+			})
+
+		$(document).ready(function(){
+				$("#in").click(function(){
+			document.getElementById("in").value=document.getElementById("cs").innerText;
+				
+				})
+						})
+//		$(document).ready(function(){
+//				$("#in").click(function(){
+//			$("#in").valueOf()=$("#cs").innerHTML
+//				
+//				})
+//						})
+		</script>
+	</body>
+</html>

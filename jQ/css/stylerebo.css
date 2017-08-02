@@ -1,0 +1,14 @@
+*{
+	margin: 0 ;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	
+}
+ul,ol,li{
+	list-style: none;
+}
+#rebo{
+	margin:0 auto ;
+	width: 700;
+}

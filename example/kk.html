@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#liuj{
+				width: 150px;
+				height: 150px;
+				border: red 1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div id=liuj>
+			
+		</div>
+		<script>
+ var  r = 4;
+  for (var y = 0; y <= 2 * r; y += 2) {
+   var x = Math.round(r - Math.sqrt(2 * r * y - y * y));
+   var longLength = 2 * (r - x);
+ 
+   for (var i = 0; i <= x; i++) {
+    document.getElementById("liuj").innerHTML+="&nbsp;&nbsp;";
+   }
+  document.getElementById("liuj").innerHTML+="*";
+ 
+   for (var j = 0; j <= longLength; j++) {
+   document.getElementById("liuj").innerHTML+="&nbsp;&nbsp;";
+   }
+document.getElementById("liuj").innerHTML+=" *<br />";
+}
+	</script>
+	</body>
+</html>

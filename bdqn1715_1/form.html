@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery表单验证</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	<script>
+		$(document).ready(function(){
+			$("form").submit(function(){
+				var mail=$("#myform :text").val();
+				if(mail==""){
+					alert("email不能为空");
+					return false;
+				}
+				if(mail.indexOf("@")==-1){
+					alert("Email格式不正确\n必须包含@");
+					return false;
+				}
+				if(mail.indexOf(".")==-1){
+					alert("Email格式不正确\n必须包含.");
+					return false;
+				}
+				var pwd=$("#pwd").val();
+				if(pwd==""){
+					alert("密码不能为空");
+					return false;
+				}
+				if(pwd.length<6){
+					alert("密码必须等于或大于6个字符");
+					return false;
+				}
+				var repwd=$("#repwd").val();
+				if(pwd !=repwd){
+					alert("两次输入的密码不一致");
+					return false;
+				}
+			})
+		})
+		
+	</script>
+	<style>
+		body{
+			background: darkgrey;
+			text-align: center;
+			margin: 20px;
+		}
+		.register{
+			width: 300px;
+			margin: 0 auto;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="register">
+			<form action="main.html" id="myform" method="get" name="">
+				
+				<label> 邮    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  箱 :</label>
+				<input type="text" class="mail" />
+				<br />
+				<label> 密    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  码 :</label>
+				<input type="password"  id="pwd"/>
+				<br />
+				<label>重复密码 :</label>
+				<input type="password"  id="repwd"/>
+				<br />
+				<input name="btn" id="btn" type="submit" value="登录" />
+			</form>
+		</div>
+	</body>
+</html>

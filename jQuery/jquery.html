@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jquery</title>
+		<style>
+			li{list-style: none;
+			cursor:pointer;/* 小手*/
+			}
+			.current{
+				background: red;
+			}
+			td{
+				width: 30px;
+				height: 30px;
+			}
+		</style>
+		<script src="https://apps.bdimg.com/libs/jquery/1.4.4/jquery.js">
+</script>
+<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	</head>
+	<body>
+
+	   
+	    <!--<table border="2">
+	    	<tr>
+	    		<td>1</td>
+	    		<td>1</td>
+	    		<td>1</td>
+	    		<td>1</td>
+	    		
+	    	</tr>
+	    	<tr>
+	    		<td>2</td>
+	    		<td>2</td>
+	    		<td>2</td>
+	    		<td>2</td>
+	    		
+	    	</tr><tr>
+	    		<td>3</td>
+	    		<td>3</td>
+	    		<td>3</td>
+	    		<td>3</td>
+	    		
+	    	</tr><tr>
+	    		<td>4</td>
+	    		<td>4</td>
+	    		<td>4</td>
+	    		<td>4</td>
+	    		
+	    	</tr><tr>
+	    		<td>5</td>
+	    		<td>5</td>
+	    		<td>5</td>
+	    		<td>5</td>
+	    		
+	    	</tr><tr>
+	    		<td>6</td>
+	    		<td>6</td>
+	    		<td>6</td>
+	    		<td>6</td>
+	    		
+	    	</tr>
+	    </table>-->
+	    <div id="nav">
+	    	<ul>
+	    		<li id="current">jQuery 简介</li>
+	    		<li id="df">jQuery 语法</li>
+	    		<li>jQuery 选择器</li>
+	    		<li>jQuery 的事件和动画</li>
+	    		<li>jQuery 方法</li>
+	    		
+	    	</ul>
+	    </div>
+ <script type="text/javascript">
+// 	$(document).ready(function(){
+// 		$("li").click(function(){
+// 			$("#current").addClass("current")
+// 		})
+// 	})
+ 	
+	    	
+//	    	$(
+//	    		function(){
+//	    			$("li:even").css({"background-color":"lightblue"});
+//	    			$("li:odd").css("background-color","lightgoldenrodyellow");
+//	    			$("tr:odd").css("background-color","lightgoldenrodyellow");
+//	    			$("tr:even").css("background-color","#e8f0f2");
+//	    		}
+//	    	)
+//	    	$(
+//	    		function(){
+//	    			
+//	    			$("li").click(function(){
+//	    				$(this).hide();
+//	    			})
+////	    			$("table").click(function(){
+////	    				$(this).hide();
+////	    			})
+//	    			$("tr").click(function(){
+//	    				$(this).hide();
+//	    			})
+//	    		}
+//	    	)
+//	    	$(
+//	    		function(){
+//	    			
+//	    			
+//	    			$("table").click(function(){
+//	    				$(this).hide();
+//	    			})
+//	    		
+//	    		}
+//	    	)
+$(document).ready(function(e){
+	$("#df").mouseover(
+    	function(){
+    		$(this).css("background-color","red");
+    	});
+    $("#df").mouseout(
+    	function(){
+    		$(this).css("background-color","darkred");
+    	});
+    	
+    	
+})
+ 
+
+	    </script>
+	</body>
+</html>
